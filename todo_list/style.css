@@ -1,11 +1,16 @@
 .noteInput{
     padding-top: 10px;
+    vertical-align: baseline;
 }
-
+h1 {
+    font-family: monospace;
+    color: rgb(92, 91, 91);
+    padding-top: 20px;
+}
 .content {
     width: 700px;
     height: 700px;
-    background-color: orange;
+    background-color: rgb(231, 154, 206);
     margin: 0 auto;
     text-align: center;
 }
@@ -22,3 +27,50 @@
     text-decoration: none;
 }
 
+.buttonAdd {
+    text-align: center;
+    padding-top: 20px;
+}
+
+button {
+    border-radius:  10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#add {
+  background-color: #ca72ad; 
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.btnDelete {
+    background-color: #ce96df; 
+    padding: 5px 5px;
+    font-size: 10px;
+  color: white;
+}
+
+input {
+  padding: 5px 10px;
+  display: inline-block;
+  border: 2px solid rgb(109, 108, 108);
+  border-radius: 4px;
+  box-sizing: border-box;  
+  color: grey;
+
+}
+
+input[type="checkbox"] {
+    border: gray solid 2px;
+    width: 30px;
+    height: 26px;
+    vertical-align:middle;
+    display: inline;
+}
+
+input[type="checkbox"]:checked::before {
+   background-color: #ce96df;
+}

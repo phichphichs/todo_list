@@ -1,18 +1,13 @@
-
-function deleteE(e) {
-    e.remove();
-}
-
 function addNote() {
     //create div
     var div = document.createElement("div");
+    div.classList.add("noteInput");
 
     // create input 
     var input = document.createElement("input");
     input.setAttribute("type", "text");
     div.appendChild(input);
-    div.classList.add("noteInput");
-
+    
     //create checkbox
     var checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
@@ -26,6 +21,7 @@ function addNote() {
     //create button delete
     var deleteNote = document.createElement("button");
     deleteNote.innerHTML = "Delete";
+    deleteNote.classList.add("btnDelete");
     div.appendChild(deleteNote);
 
     //delete note
